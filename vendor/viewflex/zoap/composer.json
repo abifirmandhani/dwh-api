@@ -1,0 +1,27 @@
+{
+  "name": "viewflex/zoap",
+  "description": "For quickly deploying SOAP services in Laravel and Lumen, with auto-discovery of WSDL definitions.",
+  "keywords": ["laravel", "lumen", "soap", "soap server", "soap api"],
+  "authors": [
+    {
+      "name": "Adam Sailor",
+      "email": "viewflex.contact@gmail.com"
+    }
+  ],
+  "license": "MIT",
+  "require": {
+    "laminas/laminas-soap": "^2.9"
+  },
+  "autoload": {
+    "psr-4": {
+      "Viewflex\\Zoap\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Viewflex\\Zoap\\ZoapServiceProvider"
+      ]
+    }
+  }
+}
